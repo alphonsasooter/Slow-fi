@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Slow-Fi Simulator</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .slider-container {
+      margin: 30px;
+    }
+    .buffering {
+      font-size: 20px;
+      color: red;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐢 Slow-Fi Simulator</h1>
+  <p>Your internet speed depends on how fast you're moving.</p>
+
+  <div class="slider-container">
+    <label for="speedSlider">Your movement speed: <span id="speedValue">0</span></label><br/>
+    <input type="range" id="speedSlider" min="0" max="100" value="0" />
+  </div>
+
+  <h2>📶 Internet Speed: <span id="internetSpeed">50 Mbps</span></h2>
+  <div id="bufferingStatus"></div>
+
+  <script>
+    const slider = document.getElementById("speedSlider");
+    const speedValue = document.getElementById("speedValue");
+    const internetSpeed = document.getElementById("internetSpeed");
+    const bufferingStatus = document.getElementById("bufferingStatus");
+
+    function updateInternetSpeed(speed) {
+      speedValue.textContent = speed;
+
+      let wifiSpeed;
+      if (speed < 10) {
+        wifiSpeed = 100; // Still
+      } else if (speed < 30) {
+        wifiSpeed = 50; // Slow walk
+      } else if (speed < 60) {
+        wifiSpeed = 10; // Fast walk
+      } else {
+        wifiSpeed = 0.5; // Running = punishment!
+      }
+
+      internetSpeed.textContent = wifiSpeed + " Mbps";
+
+      if (wifiSpeed < 5) {
+        bufferingStatus.innerHTML = `<div class="buffering">🔥 Buffering... Please slow down 🙃</div>`;
+      } else {
+        bufferingStatus.innerHTML = "";
+      }
+    }
+
+    slider.addEventListener("input", () => {
+      const speed = parseInt(slider.value, 10);
+      updateInternetSpeed(speed);
+    });
+
+    updateInternetSpeed(0); // Initialize with 0 movement
+  </script>
+</body>
+</html>
