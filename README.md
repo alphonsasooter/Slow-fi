@@ -2,33 +2,37 @@
 
 
 # [Project Name] 🎯
-
-
+Slow fi
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Syntax Errors
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead:Alphonsa Sooter -MBCCET
+- Member 2: Annmariya Saju-MBCCET
+
 
 ### Project Description
-[2-3 lines about what your project does]
+Slow-Fi Simulator is a quirky and interactive web project that mimics a Wi-Fi system where your internet speed depends on how much you're moving — or at least, how much you say you're moving.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+People move too much while using Wi-Fi, and that’s clearly unacceptable. Fast movement deserves slow internet — for balance and peace of mind. Slow-Fi solves this fake problem by punishing motion with painful buffering.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+We created a web interface that pretends your movement affects Wi-Fi speed. It uses a slider to represent movement. The faster you “move,” the slower your simulated internet gets. At high speeds, you even get fake buffering messages to shame your impatience.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Languages used]:
+- JavaScript,HTML&CSS
+- [Frameworks used]:
+- NONE
+- [Libraries used]:
+- NONE
+- [Tools used]:
+- VS Code
+- Web Browser
 
 For Hardware:
 - [List main components]
@@ -37,24 +41,38 @@ For Hardware:
 
 ### Implementation
 For Software:
-# Installation
-[commands]
+1. Download or copy the project files (HTML, CSS, JS).
 
-# Run
-[commands]
+
+2. Open the .html file in any modern browser.
+
+
+3. Slide the movement bar and experience Slow-Fi!
+4.
+# Installation
+[commands]:
+1. Create a simple HTML page with a title, slider, and dynamic text placeholders.
+
+
+2. Add a JavaScript function to monitor slider input and adjust the displayed internet speed.
+
+
+3. Use conditions in JavaScript to simulate buffering when the movement is high.
+
+
+4. Style the page using CSS and animations (@keyframes) for blinking text.
+
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+https://drive.google.com/drive/folders/1ezQPQwd9VJ_c7UhLjvD-uuroOWY2X4Sp?usp=sharing
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2https://drive.google.com/drive/folders/1ezQPQwd9VJ_c7UhLjvD-uuroOWY2X4Sp?usp=sharing
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]
+https://drive.google.com/drive/folders/1ezQPQwd9VJ_c7UhLjvD-uuroOWY2X4Sp?usp=sharing
 
 # Diagrams
 ![Workflow](Add your workflow/architecture diagram here)
@@ -81,16 +99,14 @@ For Hardware:
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/drive/folders/1ezQPQwd9VJ_c7UhLjvD-uuroOWY2X4Sp?usp=sharing
 
 # Additional Demos
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+-Alphonsa Sooter: coding
+- Annmariya Saju:content
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
